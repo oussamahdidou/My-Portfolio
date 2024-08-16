@@ -1,0 +1,96 @@
+.home-page {
+    height: 100%;
+    background-color: rgb(28, 29, 43);
+}
+
+.titre {
+    font-weight: 600;
+    font-family: "Lato", sans-serif;
+}
+
+.item {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Lato", sans-serif;
+    cursor: pointer;
+    color: white;
+}
+
+.item:hover {
+    color: rgb(4, 194, 241);
+}
+
+.header {
+    font-weight: 600;
+
+}
+
+.header span {
+    color: rgb(4, 194, 241);
+    font-family: "Lato",
+        sans-serif;
+
+}
+
+ngx-typed-js {
+    color: rgb(4, 194, 241);
+    font-family: "Lato",
+        sans-serif;
+}
+
+.header-img {
+    width: 70%;
+    filter: drop-shadow(10px 10px 10px rgb(4, 194, 241));
+    border-radius: 75%;
+
+}
+
+.social-links {
+    color: rgb(4, 194, 241);
+    border-radius: 50%;
+    cursor: pointer;
+    aspect-ratio: 1;
+
+    width: 50px;
+
+    height: 50px;
+
+    border: 4px solid rgb(4, 194, 241);
+    outline: none;
+    transition: box-shadow 0.3s ease;
+    /* Smooth transition for the shadow */
+}
+
+.social-links :hover {
+    box-shadow: 16px 28px 10px rgb(4, 194, 241);
+    background-color: rgb(4, 194, 241);
+    color: rgb(28, 29, 43);
+    box-shadow: 0 0 50px rgb(4, 194, 241);
+}
+
+.social-links i {
+    aspect-ratio: 1;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    transition: box-shadow 0.3s ease;
+    border-radius: 50%;
+    /* Smooth transition for the shadow */
+}
+
+.header-button {
+    border: none;
+    outline: none;
+    color: rgb(28, 29, 43);
+    background-color: rgb(4, 194, 241);
+    border-radius: 25px;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgb(4, 194, 241);
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+}
+
+.header-button:hover {
+    box-shadow: 0 0 50px rgb(4, 194, 241);
+}

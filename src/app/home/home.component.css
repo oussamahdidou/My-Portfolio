@@ -1,5 +1,5 @@
 .home-page {
-    height: 100%;
+
     background-color: rgb(28, 29, 43);
 }
 
@@ -93,4 +93,61 @@ ngx-typed-js {
 
 .header-button:hover {
     box-shadow: 0 0 50px rgb(4, 194, 241);
+}
+
+.about-img {
+    width: 90%;
+}
+
+.magicpattern {
+    width: 75%;
+    aspect-ratio: 1;
+    box-shadow: 0 0 50px rgb(4, 194, 241);
+    background-color: rgb(4, 194, 241);
+
+    overflow: hidden;
+    position: relative;
+    /* animation: blobAnimation 6s infinite; */
+    border-radius: 40% 50% 60% 40%;
+    transform: scale(0.95);
+}
+
+/* @keyframes blobAnimation {
+
+    0%,
+    100% {
+        border-radius: 50% 50% 50% 50%;
+        transform: scale(1);
+    }
+
+    25% {
+        border-radius: 60% 40% 60% 40%;
+        transform: scale(1.1);
+    }
+
+    50% {
+        border-radius: 50% 60% 40% 50%;
+        transform: scale(1.05);
+    }
+
+    75% {
+        border-radius: 40% 50% 60% 40%;
+        transform: scale(0.95);
+    }
+} */
+.about-me-title {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+}
+
+.about-me-description {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+}
+
+::selection {
+    background:  rgb(4, 194, 241);
+    /* Background color when text is selected */
+    color:rgb(28, 29, 43);
+    /* Text color when text is selected */
 }

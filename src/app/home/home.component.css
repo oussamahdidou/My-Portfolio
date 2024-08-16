@@ -89,6 +89,7 @@ ngx-typed-js {
     box-shadow: 0 0 10px rgb(4, 194, 241);
     font-family: "Nunito Sans", sans-serif;
     font-weight: 700;
+    text-decoration: none;
 }
 
 .header-button:hover {
@@ -146,8 +147,8 @@ ngx-typed-js {
 }
 
 ::selection {
-    background:  rgb(4, 194, 241);
+    background: rgb(4, 194, 241);
     /* Background color when text is selected */
-    color:rgb(28, 29, 43);
+    color: rgb(28, 29, 43);
     /* Text color when text is selected */
 }

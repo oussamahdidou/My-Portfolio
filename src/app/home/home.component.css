@@ -1,0 +1,39 @@
+.home-page {
+    height: 100%;
+    background-color: rgb(28, 29, 43);
+}
+
+.titre {
+    font-weight: 600;
+    font-family: "Lato", sans-serif;
+}
+
+.item {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Lato", sans-serif;
+    cursor: pointer;
+    color: white;
+}
+
+.item:hover {
+    color: rgb(4, 194, 241);
+}
+
+.header {
+    font-weight: 600;
+
+}
+
+.header span {
+    color: rgb(4, 194, 241);
+    font-family: "Lato",
+        sans-serif;
+
+}
+
+ngx-typed-js {
+    color: rgb(4, 194, 241);
+    font-family: "Lato",
+        sans-serif;
+}

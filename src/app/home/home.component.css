@@ -152,3 +152,39 @@ ngx-typed-js {
     color: rgb(28, 29, 43);
     /* Text color when text is selected */
 }
+
+.skills-title {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+}
+
+.skills-item {
+    color: rgb(4, 194, 241);
+    border-radius: 50%;
+    cursor: pointer;
+    aspect-ratio: 1;
+
+    width: 100px;
+
+    height: 100px;
+    transition: box-shadow 0.3s ease;
+    border: 4px solid rgb(4, 194, 241);
+    outline: none;
+}
+
+.skills-item :hover {
+    box-shadow: 0 0 50px rgb(4, 194, 241);
+    background-color: rgb(4, 194, 241);
+    color: rgb(28, 29, 43);
+}
+
+.skills-item i {
+    aspect-ratio: 1;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    transition: box-shadow 0.3s ease;
+    border-radius: 50%;
+    font-size: 50px;
+}

@@ -188,3 +188,14 @@ ngx-typed-js {
     border-radius: 50%;
     font-size: 50px;
 }
+
+.project-item {
+    aspect-ratio: 16/9;
+    box-shadow: 0 0 20px rgb(4, 194, 241);
+    overflow: hidden;
+}
+
+.project-item img {
+    width: 100%;
+    height: 100%;
+}

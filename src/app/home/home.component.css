@@ -108,28 +108,30 @@ ngx-typed-js {
 }
 
 /* @keyframes blobAnimation {
+  0%,
+  100% {
+    border-radius: 50% 50% 50% 50%;
+    transform: scale(1);
+  }
 
-    0%,
-    100% {
-        border-radius: 50% 50% 50% 50%;
-        transform: scale(1);
-    }
+  25% {
+    border-radius: 60% 40% 60% 40%;
+    transform: scale(1.1);
+  }
 
-    25% {
-        border-radius: 60% 40% 60% 40%;
-        transform: scale(1.1);
-    }
+  50% {
+    border-radius: 50% 60% 40% 50%;
+    transform: scale(1.05);
+  }
 
-    50% {
-        border-radius: 50% 60% 40% 50%;
-        transform: scale(1.05);
-    }
-
-    75% {
-        border-radius: 40% 50% 60% 40%;
-        transform: scale(0.95);
-    }
+  75% {
+    border-radius: 40% 50% 60% 40%;
+    transform: scale(0.95);
+  }
 } */
+* {
+  animation-duration: 2s;
+}
 .about-me-title {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 700;

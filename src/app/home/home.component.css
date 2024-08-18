@@ -1,116 +1,110 @@
 .home-page {
-
-    background-color: rgb(28, 29, 43);
+  background-color: rgb(28, 29, 43);
 }
 
 .titre {
-    font-weight: 600;
-    font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
 }
 
 .item {
-    font-size: 20px;
-    font-weight: 600;
-    font-family: "Lato", sans-serif;
-    cursor: pointer;
-    color: white;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  color: white;
 }
 
 .item:hover {
-    color: rgb(4, 194, 241);
+  color: rgb(4, 194, 241);
 }
 
 .header {
-    font-weight: 600;
-
+  font-weight: 600;
 }
 
 .header span {
-    color: rgb(4, 194, 241);
-    font-family: "Lato",
-        sans-serif;
-
+  color: rgb(4, 194, 241);
+  font-family: "Lato", sans-serif;
 }
 
 ngx-typed-js {
-    color: rgb(4, 194, 241);
-    font-family: "Lato",
-        sans-serif;
+  color: rgb(4, 194, 241);
+  font-family: "Lato", sans-serif;
 }
 
 .header-img {
-    width: 70%;
-    filter: drop-shadow(10px 10px 10px rgb(4, 194, 241));
-    border-radius: 75%;
-
+  width: 70%;
+  filter: drop-shadow(10px 10px 10px rgb(4, 194, 241));
+  border-radius: 75%;
 }
 
 .social-links {
-    color: rgb(4, 194, 241);
-    border-radius: 50%;
-    cursor: pointer;
-    aspect-ratio: 1;
+  color: rgb(4, 194, 241);
+  border-radius: 50%;
+  cursor: pointer;
+  aspect-ratio: 1;
 
-    width: 50px;
+  width: 50px;
 
-    height: 50px;
+  height: 50px;
 
-    border: 4px solid rgb(4, 194, 241);
-    outline: none;
-    transition: box-shadow 0.3s ease;
-    /* Smooth transition for the shadow */
+  border: 4px solid rgb(4, 194, 241);
+  outline: none;
+  transition: box-shadow 0.3s ease;
+  /* Smooth transition for the shadow */
 }
 
 .social-links :hover {
-    box-shadow: 16px 28px 10px rgb(4, 194, 241);
-    background-color: rgb(4, 194, 241);
-    color: rgb(28, 29, 43);
-    box-shadow: 0 0 50px rgb(4, 194, 241);
+  box-shadow: 16px 28px 10px rgb(4, 194, 241);
+  background-color: rgb(4, 194, 241);
+  color: rgb(28, 29, 43);
+  box-shadow: 0 0 50px rgb(4, 194, 241);
 }
 
 .social-links i {
-    aspect-ratio: 1;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    transition: box-shadow 0.3s ease;
-    border-radius: 50%;
-    /* Smooth transition for the shadow */
+  aspect-ratio: 1;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  transition: box-shadow 0.3s ease;
+  border-radius: 50%;
+  /* Smooth transition for the shadow */
 }
 
 .header-button {
-    border: none;
-    outline: none;
-    color: rgb(28, 29, 43);
-    background-color: rgb(4, 194, 241);
-    border-radius: 25px;
-    transition: box-shadow 0.3s ease;
-    box-shadow: 0 0 10px rgb(4, 194, 241);
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: 700;
-    text-decoration: none;
+  border: none;
+  outline: none;
+  color: rgb(28, 29, 43);
+  background-color: rgb(4, 194, 241);
+  border-radius: 25px;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgb(4, 194, 241);
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .header-button:hover {
-    box-shadow: 0 0 50px rgb(4, 194, 241);
+  box-shadow: 0 0 50px rgb(4, 194, 241);
 }
 
 .about-img {
-    width: 90%;
+  width: 90%;
 }
 
 .magicpattern {
-    width: 75%;
-    aspect-ratio: 1;
-    box-shadow: 0 0 50px rgb(4, 194, 241);
-    background-color: rgb(4, 194, 241);
+  width: 75%;
+  aspect-ratio: 1;
+  box-shadow: 0 0 50px rgb(4, 194, 241);
+  background-color: rgb(4, 194, 241);
 
-    overflow: hidden;
-    position: relative;
-    /* animation: blobAnimation 6s infinite; */
-    border-radius: 40% 50% 60% 40%;
-    transform: scale(0.95);
+  overflow: hidden;
+  position: relative;
+  /* animation: blobAnimation 6s infinite; */
+  border-radius: 40% 50% 60% 40%;
+  transform: scale(0.95);
 }
 
 /* @keyframes blobAnimation {
@@ -137,115 +131,117 @@ ngx-typed-js {
     }
 } */
 .about-me-title {
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: 700;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
 }
 
 .about-me-description {
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: 700;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
 }
 
 ::selection {
-    background: rgb(4, 194, 241);
-    /* Background color when text is selected */
-    color: rgb(28, 29, 43);
-    /* Text color when text is selected */
+  background: rgb(4, 194, 241);
+  /* Background color when text is selected */
+  color: rgb(28, 29, 43);
+  /* Text color when text is selected */
 }
 
 .skills-title {
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: 700;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
 }
 
 .skills-item {
-    color: rgb(4, 194, 241);
-    border-radius: 50%;
-    cursor: pointer;
-    aspect-ratio: 1;
+  color: rgb(4, 194, 241);
+  border-radius: 50%;
+  cursor: pointer;
+  aspect-ratio: 1;
 
-    width: 100px;
+  width: 100px;
 
-    height: 100px;
-    transition: box-shadow 0.3s ease;
-    border: 4px solid rgb(4, 194, 241);
-    outline: none;
+  height: 100px;
+  transition: box-shadow 0.3s ease;
+  border: 4px solid rgb(4, 194, 241);
+  outline: none;
 }
 
 .skills-item :hover {
-    box-shadow: 0 0 50px rgb(4, 194, 241);
-    background-color: rgb(4, 194, 241);
-    color: rgb(28, 29, 43);
+  box-shadow: 0 0 50px rgb(4, 194, 241);
+  background-color: rgb(4, 194, 241);
+  color: rgb(28, 29, 43);
 }
 
 .skills-item i {
-    aspect-ratio: 1;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    transition: box-shadow 0.3s ease;
-    border-radius: 50%;
-    font-size: 50px;
+  aspect-ratio: 1;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  transition: box-shadow 0.3s ease;
+  border-radius: 50%;
+  font-size: 50px;
 }
 
 .project-item {
-    background-color: rgb(44, 45, 61);
-    border-radius: 20px;
-    aspect-ratio: 16/14;
+  background-color: rgb(44, 45, 61);
+  border-radius: 20px;
+  aspect-ratio: 16/14;
 }
 
 .project-item p {
-    /* text-align: justify; */
-    font-family: "Nunito Sans", sans-serif;
+  /* text-align: justify; */
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .project-item h6 {
-
-    font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .project-button {
-    border: none;
-    outline: none;
-    color: rgb(28, 29, 43);
-    background-color: rgb(4, 194, 241);
-    border-radius: 25px;
-    transition: box-shadow 0.3s ease;
-    box-shadow: 0 0 10px rgb(4, 194, 241);
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: 700;
-    text-decoration: none;
+  border: none;
+  outline: none;
+  color: rgb(28, 29, 43);
+  background-color: rgb(4, 194, 241);
+  border-radius: 25px;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgb(4, 194, 241);
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
 
+.project-button:hover {
+  box-shadow: 0 0 40px rgb(4, 194, 241);
 }
 
 .contact-item {
-    color: rgb(4, 194, 241);
-    border-radius: 50%;
-    cursor: pointer;
-    aspect-ratio: 1;
+  color: rgb(4, 194, 241);
+  border-radius: 50%;
+  cursor: pointer;
+  aspect-ratio: 1;
 
-    width: 100px;
+  width: 100px;
 
-    height: 100px;
-    transition: box-shadow 0.3s ease;
-    border: 4px solid rgb(4, 194, 241);
-    outline: none;
+  height: 100px;
+  transition: box-shadow 0.3s ease;
+  border: 4px solid rgb(4, 194, 241);
+  outline: none;
 }
 
 .contact-item :hover {
-    box-shadow: 0 0 50px rgb(4, 194, 241);
-    background-color: rgb(4, 194, 241);
-    color: rgb(28, 29, 43);
+  box-shadow: 0 0 50px rgb(4, 194, 241);
+  background-color: rgb(4, 194, 241);
+  color: rgb(28, 29, 43);
 }
 
 .contact-item i {
-    aspect-ratio: 1;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    transition: box-shadow 0.3s ease;
-    border-radius: 50%;
-    font-size: 50px;
+  aspect-ratio: 1;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  transition: box-shadow 0.3s ease;
+  border-radius: 50%;
+  font-size: 50px;
 }

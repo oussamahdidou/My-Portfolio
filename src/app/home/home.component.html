@@ -1,11 +1,11 @@
-<div class="container-fluid home-page">
+<div class="container-fluid home-page pb-5">
   <nav class="container d-flex justify-content-between align-items-center py-3">
     <h4 class="titre text-white p-0 m-0">Portfolio.</h4>
-    <div class="items d-flex align-items-center">
-      <div class="item mx-4">About me</div>
-      <div class="item mx-4">Tools</div>
-      <div class="item mx-4">Projects</div>
-      <div class="item mx-4">Contact</div>
+    <div class="items d-none d-lg-flex align-items-center">
+      <div [routerLink]="['/']" fragment="about" class="item mx-4">About me</div>
+      <div [routerLink]="['/']" fragment="tools" class="item mx-4">Tools</div>
+      <div [routerLink]="['/']" fragment="projects" class="item mx-4">Projects</div>
+      <div [routerLink]="['/']" fragment="contacts" class="item mx-4">Contact</div>
     </div>
   </nav>
   <div class="container mt-3 mb-5 row justify-content-between align-items-center mx-auto">
@@ -46,8 +46,8 @@
       <img class="header-img" src="img/edit.png" alt="" />
     </div>
   </div>
-  <div class="container py-5 mt-5 row justify-content-between align-items-start mx-auto">
-    <div class="col-lg-6">
+  <div id="about" class="container py-5 mt-5 row justify-content-between align-items-start mx-auto">
+    <div class="col-lg-6 d-none d-lg-block ">
       <div class="magicpattern d-flex justify-content-center align-items-end">
         <img src="img/edit.png" class="about-img" alt="" />
       </div>
@@ -69,7 +69,7 @@
   </div>
 
   <!-- <h4 class="mt-5 text-white text-center skills-title">My Skills</h4> -->
-  <h5 class="py-5 mt-5 text-white text-center skills-title">
+  <h5 id="tools" class="py-5 mt-5 text-white text-center skills-title">
     Programming Languages
   </h5>
   <div class="container row justify-content-center align-items-center mx-auto">
@@ -256,9 +256,9 @@
       </div>
     </div>
   </div>
-  <h5 class="py-5 text-white text-center skills-title">Latest Projects</h5>
+  <h5 id="projects" class="py-5 text-white text-center skills-title">Latest Projects</h5>
   <div class="container row justify-content-center align-items-center mx-auto">
-    <div class="col-lg-4 p-2 ">
+    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-2 ">
       <div class="text-white px-3 pt-5 pb-2 project-item align-content-around">
         <h6>Rh System Management</h6>
         <p>A streamlined tool for managing HR tasks like employee tracking, payroll, and performance evaluations,
@@ -268,7 +268,7 @@
 
       </div>
     </div>
-    <div class="col-lg-4 p-2 ">
+    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-2 ">
       <div class="text-white px-3 pt-5 pb-2 project-item align-content-around">
         <h6>Plastic Pollution Detection</h6>
         <p>A machine learning-based system that detects and monitors plastic waste, providing real-time pollution data
@@ -277,7 +277,7 @@
         <button class="project-button my-1 px-3 py-2">Explore</button>
       </div>
     </div>
-    <div class="col-lg-4 p-2 ">
+    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-2 ">
       <div class="text-white px-3 pt-5 pb-2 project-item align-content-around">
         <h6>Rule-Based Chatbot</h6>
         <p>An efficient chatbot designed for automating customer service and internal communications, offering quick,
@@ -289,7 +289,7 @@
     </div>
 
   </div>
-  <h5 class="py-5 text-white text-center skills-title">Contacts</h5>
+  <h5 id="contacts" class="py-5 text-white text-center skills-title">Contacts</h5>
   <div class="container row justify-content-center align-items-center mx-auto ">
     <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex gap-4 align-items-center justify-content-center">
       <a href="mailto:oussama.hdidou.pro@gmail.com"

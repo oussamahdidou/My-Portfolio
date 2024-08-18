@@ -9,11 +9,12 @@ import {
   faTwitter,
   faFacebook,
 } from '@fortawesome/free-brands-svg-icons';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NgxTypedJsModule, FontAwesomeModule],
+  imports: [NgxTypedJsModule, FontAwesomeModule, RouterModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })

@@ -57,18 +57,21 @@ export class HomeComponent implements AfterViewInit {
       description: `A streamlined tool for managing HR tasks like employee tracking, payroll, and performance evaluations,
           enhancing
           organizational efficiency and decision-making capabilities.`,
+      link: `https://github.com/oussamahdidou/RH-system-management-and-ChatBot`,
     },
     {
       titre: `Plastic Pollution Detection`,
       description: `A machine learning-based system that detects and monitors plastic waste, providing real-time pollution data
           for
           environmental protection and proactive cleanup efforts.`,
+      link: `https://github.com/oussamahdidou/plastic-pollution-detection`,
     },
     {
       titre: `Rule-Based Chatbot`,
       description: `An efficient chatbot designed for automating customer service and internal communications, offering quick,
           rule-based
           responses to user queries and improving customer experience.`,
+      link: `https://github.com/oussamahdidou/RH-system-management-and-ChatBot`,
     },
   ];
   contacts: any[] = [

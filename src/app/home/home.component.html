@@ -22,24 +22,15 @@
         Stunning User Interfaces.
       </p>
       <div target="_blank" class=" social-links-container d-flex align-items-center gap-4">
-        <a href="https://www.linkedin.com/in/oussama-hdidou-426930268/" target="_blank"
+        @for (item of socials; track $index) {
+        <a href="{{item.link}}" target="_blank"
           class="social-links text-center d-flex justify-content-center align-items-center">
-          <i class="fa-brands fa-linkedin-in text-center d-flex align-items-center justify-content-center"></i>
+          <i class="{{item.icon}} text-center d-flex align-items-center justify-content-center"></i>
         </a>
-        <a href="https://www.github.com/oussamahdidou/" target="_blank"
-          class="social-links text-center d-flex justify-content-center align-items-center">
-          <i class="fa-brands fa-github text-center d-flex align-items-center justify-content-center"></i>
-        </a>
-        <a href="https://x.com/OussamaHdidou1" target="_blank"
-          class="social-links text-center d-flex justify-content-center align-items-center">
-          <i class="fa-brands fa-twitter text-center d-flex align-items-center justify-content-center"></i>
-        </a>
-        <a href="https://www.instagram.com/oussamahdidou/" target="_blank"
-          class="social-links text-center d-flex justify-content-center align-items-center">
-          <i class="bi bi-instagram text-center d-flex align-items-center justify-content-center"></i>
-        </a>
+        }
+
       </div>
-      <a href="/document/CV.pdf" download>
+      <a href="{{CV}}" download>
         <button class=" header-button my-3 px-3 py-2">Download CV</button>
       </a>
     </div>
@@ -57,15 +48,7 @@
     <div class="col-lg-6 pt-4">
       <h4 class="about-me-title text-white ">About me</h4>
       <p class="about-me-description text-white ">
-        Passionate and versatile Fullstack Software Engineer with a knack for
-        crafting efficient, scalable, and user-centric applications. With a
-        strong background in Business Intelligence, I bring data to life,
-        transforming raw information into actionable insights. My expertise in
-        web design ensures that every project not only functions seamlessly but
-        also captivates with visually compelling and intuitive interfaces.
-        Dedicated to continuous learning and innovation, I thrive on challenges
-        and consistently strive to push the boundaries of technology, delivering
-        solutions that exceed expectations.
+        {{About}}
       </p>
     </div>
   </div>
@@ -75,280 +58,77 @@
     Programming Languages
   </h5>
   <div class="container row justify-content-center align-items-center mx-auto ">
+    @for (item of Languages; track $index) {
     <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
       <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-csharp-line-wordmark text-center d-flex justify-content-center align-items-center"></i>
+        <i class="{{item}} text-center d-flex justify-content-center align-items-center"></i>
       </div>
     </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-html5-plain-wordmark text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-css3-plain-wordmark text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-javascript-plain text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-typescript-plain text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-java-plain-wordmark text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-dart-plain-wordmark text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-python-plain-wordmark text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-php-plain text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
+    }
+
   </div>
   <h5 class=" py-5 text-white text-center skills-title">
     Frameworks & Libraries
   </h5>
   <div class=" container row justify-content-center align-items-center mx-auto">
+    @for (item of Frameworks; track $index) {
     <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
       <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-dotnetcore-plain text-center d-flex justify-content-center align-items-center"></i>
+        <i class="{{item}} text-center d-flex justify-content-center align-items-center"></i>
       </div>
     </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-laravel-original text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-nodejs-plain-wordmark text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-angular-plain text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-bootstrap-plain text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-jquery-plain-wordmark text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-flask-original text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-flutter-plain text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-swagger-plain text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-git-plain text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-figma-plain text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
+
+    }
   </div>
   <h5 class=" py-5 text-white text-center skills-title">Database & DevOps</h5>
   <div class=" container row justify-content-center align-items-center mx-auto">
+    @for (item of DbTools; track $index) {
     <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
       <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-mysql-plain-wordmark text-center d-flex justify-content-center align-items-center"></i>
+        <i class="{{item}} text-center d-flex justify-content-center align-items-center"></i>
       </div>
     </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i
-          class="devicon-microsoftsqlserver-plain-wordmark text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-postgresql-plain-wordmark text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-oracle-original text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-azuresqldatabase-plain text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-mongodb-plain-wordmark text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-azure-plain text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-azuredevops-plain text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-docker-plain-wordmark text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
+    }
+
   </div>
   <h5 class=" py-5 text-white text-center skills-title">AI Tools</h5>
   <div class=" container row justify-content-center align-items-center mx-auto">
+    @for (item of AiTools; track $index) {
     <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
       <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-tensorflow-original text-center d-flex justify-content-center align-items-center"></i>
+        <i class="{{item}} text-center d-flex justify-content-center align-items-center"></i>
       </div>
     </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-opencv-plain-wordmark text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-scikitlearn-plain text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-pytorch-original text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex align-items-center justify-content-center">
-      <div class="skills-item text-center d-flex justify-content-center align-items-center">
-        <i class="devicon-keras-plain text-center d-flex justify-content-center align-items-center"></i>
-      </div>
-    </div>
+    }
+
   </div>
   <h5 id="projects" class=" py-5 text-white text-center skills-title">Latest
     Projects</h5>
   <div class=" container row justify-content-center align-items-center mx-auto">
+    @for (item of projects; track $index) {
     <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-2 ">
       <div class="text-white px-3 pt-5 pb-2 project-item align-content-around">
-        <h6>Rh System Management</h6>
-        <p>A streamlined tool for managing HR tasks like employee tracking, payroll, and performance evaluations,
-          enhancing
-          organizational efficiency and decision-making capabilities.</p>
+        <h6>{{item.titre}}</h6>
+        <p>{{item.description}}</p>
         <button class="project-button my-1 px-3 py-2">Explore</button>
 
       </div>
     </div>
-    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-2 ">
-      <div class="text-white px-3 pt-5 pb-2 project-item align-content-around">
-        <h6>Plastic Pollution Detection</h6>
-        <p>A machine learning-based system that detects and monitors plastic waste, providing real-time pollution data
-          for
-          environmental protection and proactive cleanup efforts.</p>
-        <button class="project-button my-1 px-3 py-2">Explore</button>
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-2 ">
-      <div class="text-white px-3 pt-5 pb-2 project-item align-content-around">
-        <h6>Rule-Based Chatbot</h6>
-        <p>An efficient chatbot designed for automating customer service and internal communications, offering quick,
-          rule-based
-          responses to user queries and improving customer experience.</p>
-        <button class="project-button my-1 px-3 py-2">Explore</button>
+    }
 
-      </div>
-    </div>
 
   </div>
   <h5 id="contacts" class=" py-5 text-white text-center skills-title">Contacts</h5>
   <div class=" container row justify-content-center align-items-center mx-auto ">
+    @for (item of contacts; track $index) {
     <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex gap-4 align-items-center justify-content-center">
-      <a href="mailto:oussama.hdidou.pro@gmail.com"
+      <a href="{{item.link}}" target="_blank"
         class="contact-item text-center d-flex justify-content-center align-items-center">
-        <i class="bi bi-envelope text-center d-flex justify-content-center align-items-center"></i>
+        <i class="{{item.icon}} text-center d-flex justify-content-center align-items-center"></i>
       </a>
     </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex gap-4 align-items-center justify-content-center">
-      <a href="https://www.linkedin.com/in/oussama-hdidou-426930268/"
-        class="contact-item text-center d-flex justify-content-center align-items-center">
-        <i class="fa-brands fa-linkedin-in text-center d-flex justify-content-center align-items-center"></i>
-      </a>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex gap-4 align-items-center justify-content-center">
-      <a href="tel:+212651755423" class="contact-item text-center d-flex justify-content-center align-items-center">
-        <i class="fa-brands fa-whatsapp text-center d-flex justify-content-center align-items-center"></i>
-      </a>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex gap-4 align-items-center justify-content-center">
-      <a href="https://twitter.com/OussamaHdidou1"
-        class="contact-item text-center d-flex justify-content-center align-items-center">
-        <i class="fa-brands fa-x-twitter text-center d-flex justify-content-center align-items-center"></i>
-      </a>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex gap-4 align-items-center justify-content-center">
-      <a href="https://www.facebook.com/oussama.hdidou.1"
-        class="contact-item text-center d-flex justify-content-center align-items-center">
-        <i class="fa-brands fa-facebook-f text-center d-flex justify-content-center align-items-center"></i>
-      </a>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex gap-4 align-items-center justify-content-center">
-      <a href="https://www.instagram.com/oussamahdidou/"
-        class="contact-item text-center d-flex justify-content-center align-items-center">
-        <i class="fa-brands fa-instagram text-center d-flex justify-content-center align-items-center"></i>
-      </a>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex gap-4 align-items-center justify-content-center">
-      <a href="https://discordapp.com/users/937172777016918018"
-        class="contact-item text-center d-flex justify-content-center align-items-center">
-        <i class="fa-brands fa-discord text-center d-flex justify-content-center align-items-center"></i>
-      </a>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex gap-4 align-items-center justify-content-center">
-      <a href="https://github.com/oussamahdidou/"
-        class="contact-item text-center d-flex justify-content-center align-items-center">
-        <i class="fa-brands fa-github text-center d-flex justify-content-center align-items-center"></i>
-      </a>
-    </div>
+    }
 
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex gap-4 align-items-center justify-content-center">
-      <a href="https://stackoverflow.com/users/21627058/oussama-hdidou"
-        class="contact-item text-center d-flex justify-content-center align-items-center">
-        <i class="fa-brands fa-stack-overflow text-center d-flex justify-content-center align-items-center"></i>
-      </a>
-
-    </div>
 
   </div>
 </div>

@@ -28,11 +28,6 @@
   font-family: "Lato", sans-serif;
 }
 
-ngx-typed-js {
-  color: rgb(4, 194, 241);
-  font-family: "Lato", sans-serif;
-}
-
 .header-img {
   width: 70%;
   filter: drop-shadow(10px 10px 10px rgb(4, 194, 241));
@@ -44,15 +39,11 @@ ngx-typed-js {
   border-radius: 50%;
   cursor: pointer;
   aspect-ratio: 1;
-
   width: 50px;
-
   height: 50px;
-
   border: 4px solid rgb(4, 194, 241);
   outline: none;
   transition: box-shadow 0.3s ease;
-  /* Smooth transition for the shadow */
 }
 
 .social-links :hover {
@@ -70,7 +61,6 @@ ngx-typed-js {
   height: 100%;
   transition: box-shadow 0.3s ease;
   border-radius: 50%;
-  /* Smooth transition for the shadow */
 }
 
 .header-button {
@@ -99,14 +89,11 @@ ngx-typed-js {
   aspect-ratio: 1;
   box-shadow: 0 0 50px rgb(4, 194, 241);
   background-color: rgb(4, 194, 241);
-
   overflow: hidden;
   position: relative;
-  /* animation: blobAnimation 6s infinite; */
   border-radius: 40% 50% 60% 40%;
   transform: scale(0.95);
 }
-
 
 .about-me-title {
   font-family: "Nunito Sans", sans-serif;
@@ -120,9 +107,7 @@ ngx-typed-js {
 
 ::selection {
   background: rgb(4, 194, 241);
-  /* Background color when text is selected */
   color: rgb(28, 29, 43);
-  /* Text color when text is selected */
 }
 
 .skills-title {
@@ -135,9 +120,7 @@ ngx-typed-js {
   border-radius: 50%;
   cursor: pointer;
   aspect-ratio: 1;
-
   width: 100px;
-
   height: 100px;
   transition: box-shadow 0.3s ease;
   border: 4px solid rgb(4, 194, 241);
@@ -168,7 +151,6 @@ ngx-typed-js {
 }
 
 .project-item p {
-  /* text-align: justify; */
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -198,9 +180,7 @@ ngx-typed-js {
   border-radius: 50%;
   cursor: pointer;
   aspect-ratio: 1;
-
   width: 100px;
-
   height: 100px;
   transition: box-shadow 0.3s ease;
   border: 4px solid rgb(4, 194, 241);

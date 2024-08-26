@@ -1,224 +1,191 @@
 .home-page {
-  background-color: rgb(28, 29, 43);
+  background-color: #1c1d2b
+}
+
+.item,
+.titre {
+  font-family: "Lato", sans-serif
 }
 
 .titre {
-  font-weight: 600;
-  font-family: "Lato", sans-serif;
+  font-weight: 600
 }
 
 .item {
   font-size: 20px;
-  font-weight: 600;
-  font-family: "Lato", sans-serif;
   cursor: pointer;
-  color: white;
+  color: #fff
 }
 
 .item:hover {
-  color: rgb(4, 194, 241);
+  color: #04c2f1
 }
 
-.header {
-  font-weight: 600;
+.header,
+.item {
+  font-weight: 600
 }
 
-.header span {
-  color: rgb(4, 194, 241);
-  font-family: "Lato", sans-serif;
-}
-
+.header span,
 ngx-typed-js {
-  color: rgb(4, 194, 241);
-  font-family: "Lato", sans-serif;
+  color: #04c2f1;
+  font-family: "Lato", sans-serif
 }
 
 .header-img {
   width: 70%;
-  filter: drop-shadow(10px 10px 10px rgb(4, 194, 241));
-  border-radius: 75%;
+  filter: drop-shadow(10px 10px 10px #04c2f1);
+  border-radius: 75%
+}
+
+.social-links,
+.social-links i {
+  aspect-ratio: 1;
+  transition: box-shadow .3s ease;
+  border-radius: 50%
 }
 
 .social-links {
-  color: rgb(4, 194, 241);
-  border-radius: 50%;
+  color: #04c2f1;
   cursor: pointer;
-  aspect-ratio: 1;
-
   width: 50px;
-
   height: 50px;
-  border: 4px solid rgb(4, 194, 241);
-  outline: none;
-  transition: box-shadow 0.3s ease;
-  /* Smooth transition for the shadow */
+  border: 4px solid #04c2f1;
+  outline: 0
 }
 
+.header-button,
 .social-links :hover {
-  box-shadow: 16px 28px 10px rgb(4, 194, 241);
-  background-color: rgb(4, 194, 241);
-  color: rgb(28, 29, 43);
-  box-shadow: 0 0 50px rgb(4, 194, 241);
+  background-color: #04c2f1;
+  color: #1c1d2b
 }
 
 .social-links i {
-  aspect-ratio: 1;
   padding: 0;
   margin: 0;
   width: 100%;
-  height: 100%;
-  transition: box-shadow 0.3s ease;
-  border-radius: 50%;
-
+  height: 100%
 }
 
 .header-button {
-  border: none;
-  outline: none;
-  color: rgb(28, 29, 43);
-  background-color: rgb(4, 194, 241);
+  border: 0;
+  outline: 0;
   border-radius: 25px;
-  transition: box-shadow 0.3s ease;
-  box-shadow: 0 0 10px rgb(4, 194, 241);
+  transition: box-shadow .3s ease;
+  box-shadow: 0 0 10px #04c2f1;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
-  text-decoration: none;
+  text-decoration: none
 }
 
-.header-button:hover {
-  box-shadow: 0 0 50px rgb(4, 194, 241);
+.header-button:hover,
+.social-links :hover {
+  box-shadow: 0 0 50px #04c2f1
 }
 
 .about-img {
-  width: 90%;
+  width: 90%
 }
 
 .magicpattern {
   width: 75%;
   aspect-ratio: 1;
-  box-shadow: 0 0 50px rgb(4, 194, 241);
-  background-color: rgb(4, 194, 241);
-
+  box-shadow: 0 0 50px #04c2f1;
+  background-color: #04c2f1;
   overflow: hidden;
   position: relative;
-  /* animation: blobAnimation 6s infinite; */
   border-radius: 40% 50% 60% 40%;
-  transform: scale(0.95);
+  transform: scale(.95)
 }
 
-
-.about-me-title {
+.about-me-description,
+.about-me-title,
+.skills-title {
   font-family: "Nunito Sans", sans-serif;
-  font-weight: 700;
-}
-
-.about-me-description {
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 700;
+  font-weight: 700
 }
 
 ::selection {
-  background: rgb(4, 194, 241);
-  /* Background color when text is selected */
-  color: rgb(28, 29, 43);
-  /* Text color when text is selected */
+  background: #04c2f1;
+  color: #1c1d2b
 }
 
-.skills-title {
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 700;
+.contact-item i,
+.skills-item,
+.skills-item i {
+  aspect-ratio: 1;
+  transition: box-shadow .3s ease;
+  border-radius: 50%
 }
 
 .skills-item {
-  color: rgb(4, 194, 241);
-  border-radius: 50%;
+  color: #04c2f1;
   cursor: pointer;
-  aspect-ratio: 1;
-
   width: 100px;
-
   height: 100px;
-  transition: box-shadow 0.3s ease;
-  border: 4px solid rgb(4, 194, 241);
-  outline: none;
+  border: 4px solid #04c2f1;
+  outline: 0
 }
 
 .skills-item :hover {
-  box-shadow: 0 0 50px rgb(4, 194, 241);
-  background-color: rgb(4, 194, 241);
-  color: rgb(28, 29, 43);
+  box-shadow: 0 0 50px #04c2f1;
+  background-color: #04c2f1;
+  color: #1c1d2b
 }
 
+.contact-item i,
 .skills-item i {
-  aspect-ratio: 1;
   padding: 0;
   margin: 0;
   width: 100%;
   height: 100%;
-  transition: box-shadow 0.3s ease;
-  border-radius: 50%;
-  font-size: 50px;
+  font-size: 50px
 }
 
 .project-item {
-  background-color: rgb(44, 45, 61);
+  background-color: #2c2d3d;
   border-radius: 20px;
-  aspect-ratio: 16/14;
+  aspect-ratio: 16/14
 }
 
+.project-item h6,
 .project-item p {
-  /* text-align: justify; */
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito Sans", sans-serif
 }
 
-.project-item h6 {
-  font-family: "Nunito Sans", sans-serif;
+.contact-item,
+.project-button {
+  transition: box-shadow .3s ease;
+  outline: 0
 }
 
 .project-button {
-  border: none;
-  outline: none;
-  color: rgb(28, 29, 43);
-  background-color: rgb(4, 194, 241);
+  border: 0;
+  color: #1c1d2b;
+  background-color: #04c2f1;
   border-radius: 25px;
-  transition: box-shadow 0.3s ease;
-  box-shadow: 0 0 10px rgb(4, 194, 241);
+  box-shadow: 0 0 10px #04c2f1;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
-  text-decoration: none;
+  text-decoration: none
 }
 
 .project-button:hover {
-  box-shadow: 0 0 40px rgb(4, 194, 241);
+  box-shadow: 0 0 40px #04c2f1
 }
 
 .contact-item {
-  color: rgb(4, 194, 241);
+  color: #04c2f1;
   border-radius: 50%;
   cursor: pointer;
   aspect-ratio: 1;
-
   width: 100px;
-
   height: 100px;
-  transition: box-shadow 0.3s ease;
-  border: 4px solid rgb(4, 194, 241);
-  outline: none;
+  border: 4px solid #04c2f1
 }
 
 .contact-item :hover {
-  box-shadow: 0 0 50px rgb(4, 194, 241);
-  background-color: rgb(4, 194, 241);
-  color: rgb(28, 29, 43);
-}
-
-.contact-item i {
-  aspect-ratio: 1;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  transition: box-shadow 0.3s ease;
-  border-radius: 50%;
-  font-size: 50px;
+  box-shadow: 0 0 50px #04c2f1;
+  background-color: #04c2f1;
+  color: #1c1d2b
 }

@@ -11,7 +11,21 @@ import {
   faFacebook,
 } from '@fortawesome/free-brands-svg-icons';
 import { RouterModule } from '@angular/router';
+interface Social {
+  icon: string;
+  link: string;
+}
 
+interface Project {
+  titre: string;
+  description: string;
+  link: string;
+}
+
+interface Contact {
+  icon: string;
+  link: string;
+}
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -33,7 +47,7 @@ export class HomeComponent implements AfterViewInit {
         Dedicated to continuous learning and innovation, I thrive on challenges
         and consistently strive to push the boundaries of technology, delivering
         solutions that exceed expectations.`;
-  socials: any[] = [
+  socials: Social[] = [
     {
       icon: `fa-brands fa-linkedin-in`,
       link: `https://www.linkedin.com/in/oussama-hdidou-426930268/`,
@@ -52,7 +66,7 @@ export class HomeComponent implements AfterViewInit {
     },
   ];
   CV: string = `/document/CV.pdf`;
-  projects: any[] = [
+  projects: Project[] = [
     {
       titre: 'Rh System Management',
       description: `A streamlined tool for managing HR tasks like employee tracking, payroll, and performance evaluations,
@@ -75,7 +89,7 @@ export class HomeComponent implements AfterViewInit {
       link: `https://github.com/oussamahdidou/RH-system-management-and-ChatBot`,
     },
   ];
-  contacts: any[] = [
+  contacts: Contact[] = [
     { icon: `bi bi-envelope`, link: `mailto:oussama.hdidou.pro@gmail.com` },
     {
       icon: `fa-brands fa-linkedin-in`,

@@ -153,16 +153,16 @@ export class HomeComponent implements AfterViewInit {
   ];
   Frameworks: string[] = [
     `devicon-dotnetcore-plain`,
+    `devicon-spring-original`,
     `devicon-laravel-original`,
     `devicon-nodejs-plain-wordmark`,
+    `devicon-flask-original`,
     `devicon-angular-plain`,
+    `devicon-react-original-wordmark`,
+    `devicon-tailwindcss-original`,
     `devicon-bootstrap-plain`,
     `devicon-jquery-plain-wordmark`,
-    `devicon-flask-original`,
     `devicon-flutter-plain`,
-    `devicon-swagger-plain`,
-    `devicon-git-plain`,
-    `devicon-figma-plain`,
   ];
   Languages: string[] = [
     `devicon-csharp-line-wordmark`,

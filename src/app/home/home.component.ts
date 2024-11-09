@@ -65,7 +65,7 @@ export class HomeComponent implements AfterViewInit {
       link: `https://www.instagram.com/oussamahdidou/`,
     },
   ];
-  CV: string = `/document/CV.pdf`;
+  CV: string = `/document/OUSSAMA_HDIDOU_CV.pdf`;
   projects: Project[] = [
     {
       titre: 'Rh System Management',

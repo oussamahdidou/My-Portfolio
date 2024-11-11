@@ -125,6 +125,7 @@ export class HomeComponent implements AfterViewInit {
         'Software Engineer',
         'BI Engineer',
         'Web Designer',
+        'Expert Microsoft',
       ],
       typeSpeed: 100,
       backSpeed: 100,

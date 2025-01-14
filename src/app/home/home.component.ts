@@ -149,7 +149,7 @@ export class HomeComponent implements AfterViewInit {
     `devicon-azuresqldatabase-plain`,
     `devicon-mongodb-plain-wordmark`,
     `devicon-azure-plain`,
-    `devicon-kubernetes-plain-wordmark`,
+    `devicon-kubernetes-plain`,
     `devicon-docker-plain-wordmark`,
   ];
   Frameworks: string[] = [

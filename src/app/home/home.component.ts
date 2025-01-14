@@ -145,7 +145,7 @@ export class HomeComponent implements AfterViewInit {
     `devicon-mysql-plain-wordmark`,
     `devicon-microsoftsqlserver-plain-wordmark`,
     `devicon-postgresql-plain-wordmark`,
-    `devicon-oracle-original`,
+    `devicon-redis-plain`,
     `devicon-azuresqldatabase-plain`,
     `devicon-mongodb-plain-wordmark`,
     `devicon-azure-plain`,

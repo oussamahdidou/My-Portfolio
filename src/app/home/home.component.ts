@@ -37,7 +37,9 @@ export class HomeComponent implements AfterViewInit {
   constructor(library: FaIconLibrary) {
     library.addIcons(faLinkedin, faGithub, faTwitter, faFacebook);
   }
-  image = 'edit-min.webp';
+  aboutImage = 'edit-min.webp';
+  topImage = 'top-image.png';
+
   About: string = `Passionate and versatile Fullstack Software Engineer with a knack for
         crafting efficient, scalable, and user-centric applications. With a
         strong background in Business Intelligence, I bring data to life,

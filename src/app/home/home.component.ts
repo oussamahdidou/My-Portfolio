@@ -123,7 +123,7 @@ export class HomeComponent implements AfterViewInit {
   ngAfterViewInit() {
     const options = {
       strings: [
-        'Full Stack Developper',
+        'Full Stack Developer',
         'Software Engineer',
         'BI Engineer',
         'Web Designer',

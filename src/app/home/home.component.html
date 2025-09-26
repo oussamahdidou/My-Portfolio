@@ -110,14 +110,15 @@
     }
 
   </div>
-  <h5 id="projects" class=" py-5 text-white text-center skills-title">Latest
-    Projects</h5>
+  <h5 id="certificates" class=" py-5 text-white text-center skills-title">Certificates</h5>
   <div class=" container row justify-content-center align-items-center mx-auto">
-    @for (item of projects; track $index) {
+    @for (item of certificates; track $index) {
     <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-2 ">
-      <div class="text-white px-3 pt-5 pb-2 project-item align-content-around">
-        <h6>{{item.titre}}</h6>
-        <p>{{item.description}}</p>
+      <div class="text-white px-3 pt-2 pb-2 certificate-item align-content-center">
+        <img src="{{item.image}}" alt="{{item.title}}" class="certificate-image mb-3" />
+        <p class="certificate-title">{{item.title}}</p>
+        <p class="certificate-issued">Issued: {{item.issuingDate}}</p>
+        <p class="certificate-issuedBy">By: {{item.issuedBy}}</p>
         <a href="{{item.link}}" target="_blank">
           <button class="project-button my-1 px-3 py-2">Explore</button>
         </a>
@@ -125,20 +126,34 @@
       </div>
     </div>
     }
+    <h5 id="projects" class=" py-5 text-white text-center skills-title">Latest
+      Projects</h5>
+    <div class=" container row justify-content-center align-items-center mx-auto">
+      @for (item of projects; track $index) {
+      <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-2 ">
+        <div class="text-white px-3 pt-5 pb-2 project-item align-content-around">
+          <h6>{{item.titre}}</h6>
+          <p>{{item.description}}</p>
+          <a href="{{item.link}}" target="_blank">
+            <button class="project-button my-1 px-3 py-2">Explore</button>
+          </a>
+
+        </div>
+      </div>
+      }
 
 
-  </div>
-  <h5 id="contacts" class=" py-5 text-white text-center skills-title">Contacts</h5>
-  <div class=" container row justify-content-center align-items-center mx-auto ">
-    @for (item of contacts; track $index) {
-    <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex gap-4 align-items-center justify-content-center">
-      <a href="{{item.link}}" target="_blank"
-        class="contact-item text-center d-flex justify-content-center align-items-center">
-        <i class="{{item.icon}} text-center d-flex justify-content-center align-items-center"></i>
-      </a>
     </div>
-    }
+    <h5 id="contacts" class=" py-5 text-white text-center skills-title">Contacts</h5>
+    <div class=" container row justify-content-center align-items-center mx-auto ">
+      @for (item of contacts; track $index) {
+      <div class="col-lg-2 col-md-4 col-sm-6 p-3 d-flex gap-4 align-items-center justify-content-center">
+        <a href="{{item.link}}" target="_blank"
+          class="contact-item text-center d-flex justify-content-center align-items-center">
+          <i class="{{item.icon}} text-center d-flex justify-content-center align-items-center"></i>
+        </a>
+      </div>
+      }
 
-
+    </div>
   </div>
-</div>

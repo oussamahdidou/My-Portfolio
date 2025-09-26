@@ -26,6 +26,13 @@ interface Contact {
   icon: string;
   link: string;
 }
+interface Certificate {
+  title: string;
+  image: string;
+  link: string;
+  issuingDate: string;
+  issuedBy?: string;
+}
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -156,6 +163,10 @@ export class HomeComponent implements AfterViewInit {
     `devicon-azure-plain`,
     `devicon-amazonwebservices-plain-wordmark`,
     `devicon-digitalocean-original`,
+    'devicon-terraform-plain-wordmark',
+    'devicon-githubactions-plain-wordmark',
+    'devicon-azuredevops-plain',
+    'devicon-sentry-original',
   ];
   Frameworks: string[] = [
     `devicon-dotnetcore-plain`,
@@ -180,5 +191,32 @@ export class HomeComponent implements AfterViewInit {
     `devicon-dart-plain-wordmark`,
     `devicon-python-plain-wordmark`,
     `devicon-php-plain`,
+  ];
+  certificates: Certificate[] = [
+    {
+      title: 'Create cloud-native apps and services with .NET and ASP.NET Core',
+      image:
+        'https://learn.microsoft.com/en-us/training/achievements/create-microservices-with-dotnet.svg',
+      link: 'https://learn.microsoft.com/api/achievements/share/en-us/oussamahdidou-8261/QS2VHFBE?sharingId=AEA5DC9F5342F315',
+      issuingDate: '11/9/2025',
+      issuedBy: 'Microsoft',
+    },
+
+    {
+      title: 'Cloud Advanced: Architecture and Technologies',
+      image:
+        'https://images.credly.com/images/88170d5e-429f-4367-b138-ffe80cec19dc/image.png',
+      link: 'https://www.credly.com/badges/6a50b966-7542-49a6-bc9b-9f222f1c9c95/public_url',
+      issuingDate: '9/10/2024',
+      issuedBy: 'Huawei',
+    },
+    {
+      title: 'Data Management and Analytics',
+      image:
+        'https://images.credly.com/size/80x80/images/1dd40c7c-c99f-4393-a734-70f90b547bdb/image.png',
+      link: 'https://www.credly.com/badges/3088079b-7d40-4bcc-abe0-5688b6953872/public_url',
+      issuingDate: '9/13/2024',
+      issuedBy: 'Huawei',
+    },
   ];
 }

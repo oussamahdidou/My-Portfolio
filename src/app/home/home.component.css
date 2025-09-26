@@ -189,3 +189,21 @@ ngx-typed-js {
   background-color: #04c2f1;
   color: #1c1d2b
 }
+
+.certificate-image {
+  width: 60px;
+  height: auto;
+  border-radius: 10px;
+  filter: 0 0 20px #04c2f1;
+}
+
+.certificate-item {
+  background-color: #2c2d3d;
+  border-radius: 20px;
+  aspect-ratio: 16/14
+}
+
+.certificate-item h6,
+.certificate-item p {
+  font-family: "Nunito Sans", sans-serif
+}

@@ -84,11 +84,12 @@ export class HomeComponent implements AfterViewInit {
       link: `https://github.com/oussamahdidou/plastic-pollution-detection`,
     },
     {
-      titre: `Rule-Based Chatbot`,
-      description: `An efficient chatbot designed for automating customer service and internal communications, offering quick,
-          rule-based
-          responses to user queries and improving customer experience.`,
-      link: `https://github.com/oussamahdidou/RH-system-management-and-ChatBot`,
+      titre: `Cloud-Native Integrated Solution for Inventory, Marketplace & Accounting Services`,
+      description: `A cloud-native, event-driven solution built with microservices architecture and ECST principles,
+       integrating inventory management, marketplace operations, and accounting services. 
+       It enables asynchronous communication between services, real-time event propagation, scalable workflows, and seamless business process automation.
+       `,
+      link: `https://github.com/oussamahdidou/microservices`,
     },
   ];
   contacts: Contact[] = [

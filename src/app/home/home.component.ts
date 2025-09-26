@@ -84,10 +84,8 @@ export class HomeComponent implements AfterViewInit {
       link: `https://github.com/oussamahdidou/plastic-pollution-detection`,
     },
     {
-      titre: `Cloud-Native Integrated Solution for Inventory, Marketplace & Accounting Services`,
-      description: `A cloud-native, event-driven solution built with microservices architecture and ECST principles,
-       integrating inventory management, marketplace operations, and accounting services. 
-       It enables asynchronous communication between services, real-time event propagation, scalable workflows, and seamless business process automation.
+      titre: `Cloud-Native Integrated Solution `,
+      description: `An event-driven, cloud-native microservices solution integrating inventory, marketplace, and accounting services for scalable and real-time business workflows.
        `,
       link: `https://github.com/oussamahdidou/microservices`,
     },

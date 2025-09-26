@@ -203,7 +203,8 @@ export class HomeComponent implements AfterViewInit {
     },
 
     {
-      title: 'Cloud Advanced: Architecture and Technologies',
+      title:
+        'Huawei ICT Academy: Cloud Advanced: Architecture and Technologies',
       image:
         'https://images.credly.com/images/88170d5e-429f-4367-b138-ffe80cec19dc/image.png',
       link: 'https://www.credly.com/badges/6a50b966-7542-49a6-bc9b-9f222f1c9c95/public_url',
@@ -211,7 +212,7 @@ export class HomeComponent implements AfterViewInit {
       issuedBy: 'Huawei',
     },
     {
-      title: 'Data Management and Analytics',
+      title: 'Huawei ICT Academy: Data Management and Analytics',
       image:
         'https://images.credly.com/size/80x80/images/1dd40c7c-c99f-4393-a734-70f90b547bdb/image.png',
       link: 'https://www.credly.com/badges/3088079b-7d40-4bcc-abe0-5688b6953872/public_url',
